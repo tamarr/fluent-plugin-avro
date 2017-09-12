@@ -20,12 +20,12 @@ Either `file` or `schema` is required.
 <match example.avro>
   type file
   path /path/to/output
-  format avro
+  output_data_type avro
 
-  schema_file /path/to/schema.avsc
+  file /path/to/schema.avsc
 
   ## You can use schema_json instead of schema_file
-  # schema_json {"type":"record","name":"example","namespace":"org.example","fields":[{"name":"message","type":"string"}]}
+  # schema {"type":"record","name":"example","namespace":"org.example","fields":[{"name":"message","type":"string"}]}
 </match>
 ```
 
